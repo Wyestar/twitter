@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Wyestar/twitter/issues"
   },
-  "homepage": "https://github.com/Wyestar/twitter#readme"
+  "homepage": "https://github.com/Wyestar/twitter#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
