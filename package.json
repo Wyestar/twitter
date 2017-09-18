@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "twitter",
+  "main": "twitter.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wyestar/twitter.git"
+  },
+  "keywords": [
+    "keywords"
+  ],
+  "author": "author",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wyestar/twitter/issues"
+  },
+  "homepage": "https://github.com/Wyestar/twitter#readme"
+}
