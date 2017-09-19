@@ -4,8 +4,8 @@ const nunjucks = require('nunjucks');
 
 
 app.use( (req, res, next) => {
-  console.log('get is waiting');
-  console.log();
+  console.log(req.method + ' / ' + res.statusCode);
+  //console.log();
 
   next();
 })
