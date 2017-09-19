@@ -4,6 +4,8 @@ const nunjucks = require('nunjucks');
 
 const routes = require('./routes');
 
+app.use(express.static('./public'));
+
 app.use('/', routes);
 
 app.use( (req, res, next) => {
@@ -25,11 +27,6 @@ var locals = {
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 nunjucks.configure('views', {noCache: true});
-nunjucks.render('index.html', locals, (err, output) => {
-  console.log(output);
-});
-
-
 
 
 app.listen(3000, () => {
