@@ -1,17 +1,16 @@
 const express = require('express');
 const app = express();
 const nunjucks = require('nunjucks');
-
 const routes = require('./routes');
-
-app.use(express.static('./public'));
-
-app.use('/', routes);
 
 app.use( (req, res, next) => {
   console.log(req.method + ' / ' + res.statusCode);
   next();
 })
+
+app.use(express.static('./public'));
+
+app.use('/', routes);
 
 // app.get('/', (req, res) => {
 //   const people = [{name: 'Full'}, {name: 'Stacker'}, {name: 'Son'}];
