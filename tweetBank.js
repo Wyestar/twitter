@@ -2,8 +2,13 @@ const _ = require('lodash');
 
 const data = [];
 
+let idTracker = 0;
+
 function add(name, content) {
-  data.push({ name: name, content: content});
+  idTracker++;
+  idTracker = idTracker.toString();
+  data.push({ name: name, content: content, idTracker: idTracker});
+
 }
 
 function list() {
