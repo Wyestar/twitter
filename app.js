@@ -32,8 +32,6 @@ nunjucks.render('index.html', locals, (err, output) => {
 });
 
 
-
-
 app.listen(3000, () => {
   console.log('listening...');
 })
