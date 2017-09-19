@@ -13,10 +13,14 @@ router.get('/', (req, res) => {
 router.get('/users/:name', function(req, res) {
   var name = req.params.name;
   var list = tweetBank.find( {name: name} );
-  console.log(list);
-  // should be just tweet, no names
-  res.render('index', { tweets: list } );
-});
+  res.render('index', { tweets: list });
+})
+
+router.get('/users/id/:id', function(req, res) {
+  var id = req.params.id;
+  var uniqueIds = tweetBank.find( {idTracker: id} );
+  res.render('index', { tweets: uniqueIds } );
+})
 
 
 

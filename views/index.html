@@ -17,7 +17,7 @@
     <div class="borders">
       {% for tweet in tweets %}
         <div class="borderTweet">
-        <li>{{tweet.name}}</li>
+        <li><a href="/users/{{tweet.name}}">{{tweet.name}}</a></li>
         <li>{{tweet.content}}</li>
       </div>
       {% endfor %}
